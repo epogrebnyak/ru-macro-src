@@ -54,6 +54,10 @@ def download(url, force=False, verbose=True):
     else:
         if verbose:
             print("-> Skipping {} (already downloaded)".format(url))
+
+def make_archive(output_filename):
+    folder = get_directory()
+    shutil.make_archive(output_filename, 'zip', folder)
             
 if __name__ == "__main__":
 
@@ -62,7 +66,8 @@ if __name__ == "__main__":
     
     from url_config import yield_urls_based_on_yaml as url_iter
     for url in url_iter():
-        download(url)
+        download(url)        
+    make_archive("files")
     
     
     
