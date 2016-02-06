@@ -1,5 +1,4 @@
 # TODO 1: decide on preferred data type for R time series and make similar code in R  
-# TODO 2: if necessary, make code for dates_intro.r 
  
 # we have two time series of power and oil production by month in Russia in 2014, TWh (млрд. кВтч) and mln t
 
